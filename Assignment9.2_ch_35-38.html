@@ -1,0 +1,33 @@
+<!-- #### Second Assignment
+1. User input value in Number through prompt ```Example value=5```
+2. Factorialize a Number ```use Function```
+3. print value in console.log() ``` console.log(value); the result is 120```
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Assigment9.2</title>
+ </head>
+ <body>
+     <script>
+         var inputValue = prompt("Enter a number for factorize");
+         
+         function factorize(num){
+            if (num ===0 || num === 1){
+                 return 1;
+            }    
+            for (var i = num - 1; i >= 1; i--){
+                num = num * i;
+            }
+            return num;
+         }    
+         console.log(factorize(inputValue));
+
+         
+     </script>
+     
+ </body>
+ </html>

@@ -1,0 +1,46 @@
+<!-- ## JS chapter 10 to 14
+Java-script assignments chapter 10 to 14
+
+#### Make a Calculator
+1. input a value from user ```for example num1 is 7```
+1. input a second value from user ```for example num2 is 3```
+3. input a third value from user ```for example sign is "+" or "-" or "*" or "/" or "%"```
+4. print operation in alert() ```7-3 =4, or 7*3 =21, or 7/3 =2.3, or 7+3 =10 or 7%3 =1``` 
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Assignment4.1</title>
+ </head>
+ <body>
+     <script>
+         var num1 = Number(prompt ("Enter a first digit","7"));
+         var num2 = Number(prompt ("Enter a 2nd didit", "3"));
+         var sign = prompt ("Enter a sign to perform a mathematical operation i.e. + or - or * or / or %","-");
+         
+         if (sign==="+"){
+             var result=num1+num2;
+             alert(`${num1}${sign}${num2}=${result}`);
+         }
+         else if(sign==="-"){
+            var result=num1-num2;
+             alert(`${num1}${sign}${num2}=${result}`);
+         }
+         else if(sign==="*"){
+            var result=num1*num2;
+             alert(`${num1}${sign}${num2}=${result}`);
+         }
+         else if(sign==="/"){
+            var result=num1/num2;
+             alert(`${num1}${sign}${num2}=${result}`);
+         }
+         else if(sign==="%"){
+            var result=num1%num2;
+             alert(`${num1}${sign}${num2}=${result}`);
+         }
+
+     </script>
+ </body>
+ </html>

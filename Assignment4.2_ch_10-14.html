@@ -1,0 +1,27 @@
+<!-- #### Second Assignment - Make a Percentage Calculator
+
+1. Get the 5-course number from the user```for example course1 is 70```
+var totalMarks = 500
+2. Calculate the total percentage ``` formula:  obtainedMarks * 100/ totalMarks ```
+3. print output in alert. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment4.2</title>
+</head>
+<body>
+    <script>
+        var sub1 = Number(prompt("Enter Marks Obtained in 1st Subject"));
+        var sub2 = Number(prompt("Enter Marks Obtained in 2nd Subject"));
+        var sub3 = Number(prompt("Enter Marks Obtained in 3rd Subject"));
+        var sub4 = Number(prompt("Enter Marks Obtained in 4th Subject"));
+        var sub5 = Number(prompt("Enter Marks Obtained in 5th Subject"));
+        var totalMarks = Number(prompt("Enter Total Marks of 5 Subjects","500"));
+        var totalPercent = ((sub1+sub2+sub3+sub4+sub5)/totalMarks)*100;
+        alert(`Total Percentage: ${totalPercent}`);
+
+    </script>
+</body>
+</html>

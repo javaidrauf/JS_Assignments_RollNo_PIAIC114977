@@ -1,0 +1,37 @@
+<!-- #### Second Assignment
+
+1. input value from user in String ```var inputValue="cloUd naTive computinG"```
+2. Convert every first letter of the content in Capitalize case. ```inputValue="Cloud Native Computing"```
+3. print value in console.log() ```console.log(inputValue) | check result in browser console``` -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment7.2</title>
+</head>
+<body>
+    <script>
+        var inputValue = prompt("Enter String","cloUd naTive computinG");
+       
+        var firstChar = inputValue.slice(0,1);
+        var otherChar = inputValue.slice(1,5);
+        firstChar = firstChar.toUpperCase();
+        otherChar = otherChar.toLowerCase();
+        
+        var firstChar1 = inputValue.slice(6,7);
+        var otherChar1 = inputValue.slice(7,12);
+        firstChar1 = firstChar1.toUpperCase();
+        otherChar1 = otherChar1.toLowerCase();
+       
+        var firstChar2 = inputValue.slice(13,14);
+        var otherChar2 = inputValue.slice(14,22);
+        firstChar2 = firstChar2.toUpperCase();
+        otherChar2 = otherChar2.toLowerCase();
+        inputValue = firstChar + otherChar +" "+ firstChar1 + otherChar1 +" "+ firstChar2 + otherChar2;
+        console.log(inputValue);
+
+    </script>
+</body>
+</html>

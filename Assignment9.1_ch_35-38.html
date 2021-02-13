@@ -1,0 +1,33 @@
+<!-- ## JS chapter 35 to 38
+Java-script assignments chapter 35 to 38
+
+1. input value from user in String ```var inputValue="cloUd naTive computinG"```
+2. Convert every first letter of the content in Capitalize case. ```inputValue="Cloud Native Computing"```
+```use Function```
+3. print value in console.log() ```console.log(inputValue) | check result in browser console``` -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment9.1</title>
+</head>
+<body>
+    <script>
+        var inputValue = prompt("Convert content in Capitalize","cloUd naTive computinG");
+
+        function capitalizeCase(str) {
+            str = str.toLowerCase().split(' ');
+            for (var i = 0; i < str.length; i++) {
+                str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+            }
+            return str.join(' ');
+        }
+        console.log(capitalizeCase(inputValue));
+        
+
+    </script>
+    
+</body>
+</html>
